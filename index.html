@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/global.css" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+		
+    </head>
+    <body>
+
+  
+<header><h1>Food &amp; Travel</h1>
+ <nav>
+ 	<ul>
+ 	<li><a href="#">Home</a></li> // 
+ 	<li><a href="#">About</a></li> // 
+ 	<li class="active">Gallery</li> // 
+ 	<li><a href="#">Contact</a></li>
+ 	</ul>
+ </nav>
+ </header>
+<div id="container">
+  <div id="content">
+    
+    <div class="product featured">
+      <img src="img/food/food_Webvilla.jpg" alt="Photo by Webvilla" title="Photo by Webvilla" />
+    </div>
+    
+    <div class="product">
+      <img src="img/food/food_Dominik_Martin.jpg" alt="Photo by Dominik Martin" title="Photo by Dominik Martin" />
+    </div>
+    
+    <div class="product">
+    <img src="img/food/food_Vee-0_2.jpg" alt="Photo by Vee-0" title="Photo by Vee-0" />
+      
+    </div>
+    
+    <div class="product">
+      <img src="img/food/food_Sonja_Langford.jpg" alt="Photo by Sonja Langford" title="Photo by Sonja Langford" />
+    </div>
+    
+    <div class="product">
+    <img src="img/food/food_Vee-0.jpg" alt="Photo by Vee-0" title="Photo by Vee-0" />
+      
+    </div>
+    
+    <div class="product featured">
+      <img src="img/travel/Emanuele_Pinna.jpg" alt="Photo by Emanuele Pinna" title="Photo by Emanuele Pinna" />
+    </div>
+    
+    <div class="product">
+      <img src="img/travel/Louis_Pellissier.jpg" alt="Photo by Louis Pellissier" title="Photo by Louis Pellissier" />
+    </div>
+    
+    <div class="product">
+       <img src="img/travel/Anders_Jilden.jpg" alt="Photo by Anders Jildén" title="Photo by Anders Jildén" />
+    </div>
+    
+    <div class="product">
+       <img src="img/travel/Anton_Sulsky.jpg" alt="Photo by Anton Sulsky" title="Photo by Anton Sulsky" />
+    </div>
+    
+    <div class="product">
+      <img src="img/travel/Matthew_Wiebe.jpg" alt="Photo by Matthew Wiebe" title="Photo by Matthew Wiebe" />
+    </div>
+    
+  
+    
+  </div>
+
+</div>
+  
+  <footer>All images CC0 from  <a href="http://unsplash.com/">unsplash.com</a></footer>
+  
+
+  
+  
+
+
+
+<!-- Scripts for Masonry  -->
+		<script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+		  
+      
+		<script type="text/javascript">   
+
+    var container = document.querySelector('#container');
+    var msnry;
+    // initialize Masonry after images have loaded
+    imagesLoaded( container, function() {
+      msnry = new Masonry( container, {
+        columnWidth: 320,
+        itemSelector: '.product',
+
+        isFitWidth: true, // Sets the width of the container to fit the available number of columns, based the size of container's parent
+        transitionDuration:0
+      });
+    });
+
+                       
+ 		</script>
+    </body>
+</html>
